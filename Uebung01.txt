@@ -1,0 +1,46 @@
+1.1.1
+Sqrt(10-2)= 2.82842712474619
+Sqrt(10-2)= "Berechnungsergebnis ist NaN!"
+
+1.1.2 
+Sqrt(10-2)= 2.8284271247461903
+Sqrt(10-2)= NaN
+
+1.1.3
+Da die Assertion nicht aktiviert ist
+
+1.1.4
+java -ea "Klassenname"
+
+
+1.2.1
+weil bei der Berechnung von Double Typen es zu kleinen Ungenauigkeiten kommt
+
+1.2.2
+double epsilon = 1.0/100000;
+assert( ((( result*result - x ) <= epsilon) && ((result*result) - x >= ( -1 * epsilon )) ) && "Hier der String");
+
+1.2.3
+assert( (x >= 0) && "Negative Zahlen sind zum Wurzelziehen schlecht geeingnet"
+
+1.2.4
+gcc -DNDEBUG "quelltext.c"
+
+2.1
+python -o "datei.py"
+
+2.2
+Zeile 1: Es könnten Seiteneffekte entstehen. Falls der Wert 10 nicht gesetzt werden kann, kann es auch zu Fehlern ( MAlloc oder Überlauf) kommen.
+
+2.3
+Zeile 3: Unsinnig, da man davon ausgehen sollte das Python einfache Addieraufgaben korrekt rechnet (Integer ist korrekt)
+
+
+
+
+
+
+
+
+
+
