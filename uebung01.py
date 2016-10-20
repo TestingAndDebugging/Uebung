@@ -20,8 +20,8 @@ Gruppennummer = 5
 # Gruppenmitglieder:
 #
 Studenten.append({'matnr':51829, 'nachname':"Gillitzer", 'vorname':"Philipp"})
+Studenten.append({'matnr':49143, 'nachname':"Krawtschuk", 'vorname':"Maximilian"})
 Studenten.append({'matnr':55555, 'nachname':"asdasd", 'vorname':"asdasd"})
-# Studenten.append({'matnr':12347, 'nachname':"NACHNAME3", 'vorname':"VORNAME3"})
 # Studenten.append({'matnr':12348, 'nachname':"NACHNAME4", 'vorname':"VORNAME4"})
 # Studenten.append({'matnr':12349, 'nachname':"NACHNAME5", 'vorname':"VORNAME5"})
 
