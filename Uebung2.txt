@@ -1,0 +1,44 @@
+1.1
+
+1
+Einen Wert mit ungerader Länge und einen Wert mit gerader Länge. 
+Einer dieser Werte muss ebenfalls an einem geraden Indize des Stings eine Zahl größer 4 enthalten.
+
+2
+Zum Beispiel 51 und 9
+
+3
+Nein.
+Es werden keine Vertrauengrenzen überschriten.
+Es gibt keine Zeitliche Abhänigkeiten (Keine zeitkritsche Bereiche)
+
+
+1.2
+
+1
+Usereingaben, Mausklicks, Eingaben durch fremde Programme (Flash, Cookies)
+
+2
+Ausgaben auf dem Bildschirm, Ausgaben an die Hardware, Ausgaben an andere Programme
+
+3
+Fuzzy Testing
+Zufällige und auch unsinnige Eingaben
+Eingaben die Fehler erzeugen. z.B Integerüberlauf 
+
+4
+Ja, zeitkritische Eingaben wie Klicks und Doppelklicks
+
+5
+Sehr gründlich mit allen möglichen WErten des Definitionsbereichs, da eine Vertrauensgrenze überschriten wird.
+
+
+
+
+
+
+
+
+
+
+
