@@ -23,7 +23,7 @@ Gruppennummer = 11
 #
 Studenten.append({'matnr':51829, 'nachname':"Gillitzer", 'vorname':"Philipp"})
 Studenten.append({'matnr':57168, 'nachname':"Schmid", 'vorname':"Nils"})
-Studenten.append({'matnr':49143, 'nachname':"Krawtschuk", 'vorname':"Maxim"})
+Studenten.append({'matnr':49143, 'nachname':"Krawtschuk", 'vorname':"Maximilian"})
 # Studenten.append({'matnr':12346, 'nachname':"NACHNAME2", 'vorname':"VORNAME2"})
 # Studenten.append({'matnr':12347, 'nachname':"NACHNAME3", 'vorname':"VORNAME3"})
 # Studenten.append({'matnr':12348, 'nachname':"NACHNAME4", 'vorname':"VORNAME4"})
