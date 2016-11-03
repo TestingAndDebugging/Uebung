@@ -16,13 +16,13 @@ Studenten = []                 # Initalisierung der Studentenliste
 ## Bitte tragen Sie in die folgenden Variablen Ihre Gruppennummer und die
 ## Mitglieder Ihrer Gruppe ein. Bitte verwenden Sie KEINE Umlaute!
 
-Gruppennummer = 0
+Gruppennummer = 11
 # Syntax fuer die Angabe der Namen und Matrikelnummern der einzelen
 # Gruppenmitglieder:
 #
-# Studenten.append({'matnr':12345, 'nachname':"NACHNAME1", 'vorname':"VORNAME1"})
-# Studenten.append({'matnr':12346, 'nachname':"NACHNAME2", 'vorname':"VORNAME2"})
-# Studenten.append({'matnr':12347, 'nachname':"NACHNAME3", 'vorname':"VORNAME3"})
+Studenten.append({'matnr':51829, 'nachname':"Gillitzer", 'vorname':"Philipp"})
+Studenten.append({'matnr':57168, 'nachname':"Schmid", 'vorname':"Nils"})
+Studenten.append({'matnr':49143, 'nachname':"Krawtschuk", 'vorname':"Maximilian"})
 # Studenten.append({'matnr':12348, 'nachname':"NACHNAME4", 'vorname':"VORNAME4"})
 # Studenten.append({'matnr':12349, 'nachname':"NACHNAME5", 'vorname':"VORNAME5"})
 
