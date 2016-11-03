@@ -133,11 +133,30 @@ def glue(b0, b1, b2, b3, b4, b5, b6, b7, c):
 
 ###############################################################################
 ## Hier beginnt Ihr Code
+def addInt(x,y):##ints in binaer teilen, addieren und wieder zusammensetzen
+  (a0, a1, a2, a3, a4, a5, a6, a7) = split(a)
+  (b0, b1, b2, b3, b4, b5, b6, b7) = split(b)
+  (s0, s1, s2, s3, s4, s5, s6, s7, c0) = add8(a0,a1,a2,a3,a4,a5,a6,a7,b0,b1,b2,b3,b4,b5,b6,b7,false)
+  return glue(s0, s1, s2, s3, s4, s5, s6, s7, c0)
+  
 def testFullBranchCoverage_1():
-    pass
+    for i in range(256):
+      for j in range(256):
+        result = addInt(i,j)
+          print str(i) + " + " + str(j) + " = " + str(result)
+          assert ressult == (i+j)
+
 
 def testFullBranchCoverage_2():
-    pass
+    x=inputX
+    y=inputY
+    
+    ##  die idee ists hier den branch großflächig zu überdecken, was ist wenn x = 0 ist und dann was ist wenn y = 0 ist
+    if x==0:
+        y+=1
+    if y==0:
+        x+=1
+    ##  in progress
 
 ###############################################################################
 ## Bitte erst innerhalb des folgenden if Blocks Funktionen aufrufen.
