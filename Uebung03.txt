@@ -1,0 +1,19 @@
+1) Line Coverage, Branch Coverage, Function Coverage
+
+2) 75 % Line Coverage(3 von 4), 100 % Function Coverage ( 1 von 1 ) uind 50 % Branch Coerage (1 von 2)
+
+3) Die Anzahl der Ausführungen der einzelnen Lines
+
+4) -fprofile-arcs  und -ftest-coverage
+
+5) 	--zerocounters zum zurücksetzten der Counter
+	--directory zum verwenden der .da Files im Angegebenen Verzeichiss
+	--capture zum Speichern der Daten
+	--output-file zum schreiben der Daten (anstatt stdout)
+	--test-name den Namen des tests der in der Tracefile gespeichert wird.
+
+6) 	--output-directory zur Angabe des Verzeichnisses wo die Dateien abgespeichert werden
+	--title zur Darstellung des Headers in allen Dateien 
+	--show-details zur detailierteren Darstellung der Testergebnisse in extra File
+	--description-file zur kurzen Beschreibung der Tests in einer externen File
+	--legend zum einfügen einer frabigen Legende im HTML Output
