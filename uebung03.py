@@ -22,7 +22,7 @@ Gruppennummer = 11
 #
 Studenten.append({'matnr':51829, 'nachname':"Gillitzer", 'vorname':"Philipp"})
 Studenten.append({'matnr':57168, 'nachname':"Schmid", 'vorname':"Nils"})
-Studenten.append({'matnr':49143, 'nachname':"Krawtschuk", 'vorname':"Maximilian"})
+Studenten.append({'matnr':49143, 'nachname':"Krawtschuk", 'vorname':"Maxim"})
 # Studenten.append({'matnr':12348, 'nachname':"NACHNAME4", 'vorname':"VORNAME4"})
 # Studenten.append({'matnr':12349, 'nachname':"NACHNAME5", 'vorname':"VORNAME5"})
 
@@ -133,30 +133,25 @@ def glue(b0, b1, b2, b3, b4, b5, b6, b7, c):
 
 ###############################################################################
 ## Hier beginnt Ihr Code
-def addInt(x,y):##ints in binaer teilen, addieren und wieder zusammensetzen
-  (a0, a1, a2, a3, a4, a5, a6, a7) = split(a)
-  (b0, b1, b2, b3, b4, b5, b6, b7) = split(b)
-  (s0, s1, s2, s3, s4, s5, s6, s7, c0) = add8(a0,a1,a2,a3,a4,a5,a6,a7,b0,b1,b2,b3,b4,b5,b6,b7,false)
-  return glue(s0, s1, s2, s3, s4, s5, s6, s7, c0)
-  
-def testFullBranchCoverage_1():
-    for i in range(256):
-      for j in range(256):
-        result = addInt(i,j)
-          print str(i) + " + " + str(j) + " = " + str(result)
-          assert ressult == (i+j)
+def my_add(in0,in1,carry):
+	(a0,a1,a2,a3,a4,a5,a6,a7) = split(in0)
+	(b0,b1,b2,b3,b4,b5,b6,b7) = split(in1)
+	(r0,r1,r2,r3,r4,r5,r6,r7,rc) = add8(a0,a1,a2,a3,a4,a5,a6,a7,b0,b1,b2,b3,b4,b5,b6,b7,carry)
+	return glue(r0,r1,r2,r3,r4,r5,r6,r7,rc)
 
+
+def testFullBranchCoverage_1():
+
+	assert my_add(0,0,True) == 1    
 
 def testFullBranchCoverage_2():
-    x=inputX
-    y=inputY
+
+	assert my_add(255,255,False) == 510
+	
+def testFullBranchCoverage_3():
+
+	assert my_add(0,0,False) == 0
     
-    ##  die idee ists hier den branch großflächig zu überdecken, was ist wenn x = 0 ist und dann was ist wenn y = 0 ist
-    if x==0:
-        y+=1
-    if y==0:
-        x+=1
-    ##  in progress
 
 ###############################################################################
 ## Bitte erst innerhalb des folgenden if Blocks Funktionen aufrufen.
@@ -175,3 +170,4 @@ if __name__ == '__main__':
     ## Aufruf der Testfunktion
     testFullBranchCoverage_1()
     testFullBranchCoverage_2()
+    testFullBranchCoverage_3()
